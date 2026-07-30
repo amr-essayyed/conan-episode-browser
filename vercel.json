@@ -1,15 +1,10 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "headers": [
+  "builds": [
     {
-      "source": "/episodes.js",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400"
-        }
-      ]
+      "src": "**",
+      "use": "@vercel/static"
     }
   ]
 }
