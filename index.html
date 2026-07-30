@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detective Conan Episode Browser</title>
+    <meta name="description" content="Browse, search, and filter all 1200+ Detective Conan anime episodes with season, type, plot element, and date filters. Auto-updates from source.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <div class="bg-particles" id="bgParticles"></div>
+    
+    <!-- Hero Header -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-header-top">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>ANIME DATABASE</span>
+                </div>
+                
+                <!-- Live Sync Status & Button -->
+                <div class="sync-controls" id="syncControls">
+                    <span class="sync-status" id="syncStatus">
+                        <span class="sync-dot"></span>
+                        <span id="syncText">Updated</span>
+                    </span>
+                    <button class="btn-sync" id="btnSync" title="Sync latest episodes from Detective Conan World Wiki">
+                        <svg class="sync-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21.5 2v6h-6M2.5 22v-6h6"/><path d="M2 11.5a10 10 0 0 1 18.8-4.3L21.5 8M22 12.5a10 10 0 0 1-18.8 4.2L2.5 16"/></svg>
+                        <span>Check Updates</span>
+                    </button>
+                </div>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="title-detective">Detective</span>
+                <span class="title-conan">Conan</span>
+                <span class="title-sub">Episode Browser</span>
+            </h1>
+            <p class="hero-desc">Browse, search, and filter all <span class="highlight" id="totalCount">1200+</span> episodes across <span class="highlight">31 seasons</span>. Auto-synced with Detective Conan World Wiki.</p>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar" id="statsBar">
+        <div class="stats-container">
+            <div class="stat-card" id="statTotal">
+                <div class="stat-icon">📺</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statTotalValue">0</span>
+                    <span class="stat-label">Total Episodes</span>
+                </div>
+            </div>
+            <div class="stat-card" id="statCanon">
+                <div class="stat-icon">📖</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statCanonValue">0</span>
+                    <span class="stat-label">Manga Canon</span>
+                </div>
+            </div>
+            <div class="stat-card" id="statOriginal">
+                <div class="stat-icon">✨</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statOriginalValue">0</span>
+                    <span class="stat-label">Anime Original</span>
+                </div>
+            </div>
+            <div class="stat-card" id="statRemaster">
+                <div class="stat-icon">🔄</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statRemasterValue">0</span>
+                    <span class="stat-label">Remastered</span>
+                </div>
+            </div>
+            <div class="stat-card" id="statFiltered">
+                <div class="stat-icon">🔍</div>
+                <div class="stat-info">
+                    <span class="stat-value" id="statFilteredValue">0</span>
+                    <span class="stat-label">Showing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Filter Controls -->
+    <section class="filter-section" id="filterSection">
+        <div class="filter-container">
+            <!-- Search -->
+            <div class="filter-group filter-search">
+                <label class="filter-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    Search
+                </label>
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search by title, episode #, or manga source..." autocomplete="off">
+                    <button class="search-clear" id="searchClear" title="Clear search">✕</button>
+                </div>
+            </div>
+
+            <!-- Season Filter -->
+            <div class="filter-group">
+                <label class="filter-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Season
+                </label>
+                <select id="seasonFilter" class="filter-select">
+                    <option value="">All Seasons</option>
+                </select>
+            </div>
+
+            <!-- Type Filter -->
+            <div class="filter-group">
+                <label class="filter-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                    Type
+                </label>
+                <select id="typeFilter" class="filter-select">
+                    <option value="">All Types</option>
+                    <option value="Manga Canon">📖 Manga Canon</option>
+                    <option value="Anime Original">✨ Anime Original</option>
+                    <option value="Remaster">🔄 Remaster</option>
+                    <option value="Magic Kaito">🎭 Magic Kaito</option>
+                    <option value="Special Volume">📕 Special Volume</option>
+                </select>
+            </div>
+
+            <!-- Sort -->
+            <div class="filter-group">
+                <label class="filter-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                    Sort
+                </label>
+                <select id="sortFilter" class="filter-select">
+                    <option value="jp-asc">Episode # (Ascending)</option>
+                    <option value="jp-desc">Episode # (Descending)</option>
+                    <option value="date-asc">Date (Oldest First)</option>
+                    <option value="date-desc">Date (Newest First)</option>
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                    <option value="season-asc">Season (Ascending)</option>
+                    <option value="season-desc">Season (Descending)</option>
+                </select>
+            </div>
+
+            <!-- Reset -->
+            <div class="filter-group filter-actions">
+                <button class="btn-reset" id="resetFilters" title="Reset all filters">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                    Reset
+                </button>
+            </div>
+        </div>
+
+        <!-- Plot Element Filter Chips -->
+        <div class="plot-filter-bar" id="plotFilterBar">
+            <span class="plot-filter-label">Plot Elements:</span>
+            <div class="plot-chips" id="plotChips">
+                <button class="plot-chip" data-plot="black_org" title="Black Organization">
+                    <span class="chip-icon">🕵️</span><span class="chip-text">Black Org</span><span class="chip-count"></span>
+                </button>
+                <button class="plot-chip" data-plot="fbi" title="FBI">
+                    <span class="chip-icon">🔫</span><span class="chip-text">FBI</span><span class="chip-count"></span>
+                </button>
+                <button class="plot-chip" data-plot="new_character" title="New Character Introduced">
+                    <span class="chip-icon">🆕</span><span class="chip-text">New Character</span><span class="chip-count"></span>
+                </button>
+                <button class="plot-chip" data-plot="character_dev" title="Character Development">
+                    <span class="chip-icon">💎</span><span class="chip-text">Character Dev</span><span class="chip-count"></span>
+                </button>
+                <button class="plot-chip" data-plot="romance" title="Romance">
+                    <span class="chip-icon">💕</span><span class="chip-text">Romance</span><span class="chip-count"></span>
+                </button>
+                <button class="plot-chip" data-plot="past" title="Characters' Pasts">
+                    <span class="chip-icon">⏳</span><span class="chip-text">Past</span><span class="chip-count"></span>
+                </button>
+                <button class="plot-chip" data-plot="heiji" title="Heiji Hattori">
+                    <span class="chip-icon">🗡️</span><span class="chip-text">Heiji</span><span class="chip-count"></span>
+                </button>
+                <button class="plot-chip" data-plot="detective_boys" title="Detective Boys">
+                    <span class="chip-icon">👦</span><span class="chip-text">Detective Boys</span><span class="chip-count"></span>
+                </button>
+                <button class="plot-chip" data-plot="magic_kaito" title="Magic Kaito">
+                    <span class="chip-icon">🎩</span><span class="chip-text">Magic Kaito</span><span class="chip-count"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Section -->
+    <section class="table-section" id="tableSection">
+        <div class="table-container">
+            <div class="table-wrapper">
+                <table class="episode-table" id="episodeTable">
+                    <thead>
+                        <tr>
+                            <th class="th-sortable" data-sort="jp" id="thJp">
+                                <span>EP #</span>
+                                <span class="sort-icon">↕</span>
+                            </th>
+                            <th class="th-sortable" data-sort="title" id="thTitle">
+                                <span>Episode Title</span>
+                                <span class="sort-icon">↕</span>
+                            </th>
+                            <th class="th-sortable" data-sort="season" id="thSeason">
+                                <span>Season</span>
+                                <span class="sort-icon">↕</span>
+                            </th>
+                            <th id="thType">
+                                <span>Type</span>
+                            </th>
+                            <th id="thPlot">
+                                <span>Plot</span>
+                            </th>
+                            <th class="th-sortable" data-sort="date" id="thDate">
+                                <span>Air Date</span>
+                                <span class="sort-icon">↕</span>
+                            </th>
+                            <th id="thManga">
+                                <span>Manga Source</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="episodeBody">
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-icon">🔍</div>
+                <h3>No episodes found</h3>
+                <p>Try adjusting your search or filters</p>
+                <button class="btn-reset" id="emptyReset">Reset Filters</button>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <div class="pagination-info">
+                    <span id="paginationInfo">Showing 1-50 of 1200</span>
+                </div>
+                <div class="pagination-controls">
+                    <button class="page-btn" id="firstPage" title="First page">⟨⟨</button>
+                    <button class="page-btn" id="prevPage" title="Previous page">⟨</button>
+                    <div class="page-numbers" id="pageNumbers"></div>
+                    <button class="page-btn" id="nextPage" title="Next page">⟩</button>
+                    <button class="page-btn" id="lastPage" title="Last page">⟩⟩</button>
+                </div>
+                <div class="per-page">
+                    <label>Per page:</label>
+                    <select id="perPageSelect" class="filter-select per-page-select">
+                        <option value="25">25</option>
+                        <option value="50" selected>50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="9999">All</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Data auto-synced from <a href="https://www.detectiveconanworld.com/wiki/Anime" target="_blank" rel="noopener">Detective Conan World Wiki</a>. This is a fan project.</p>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" title="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="episodes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

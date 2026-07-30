@@ -1,0 +1,5 @@
+node_modules/
+.verce/
+.env
+.env.local
+*.log
