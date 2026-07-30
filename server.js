@@ -86,17 +86,21 @@ async function autoSyncCheck() {
   }
 }
 
-// Start server & scheduled sync check
-app.listen(PORT, () => {
-  console.log(`================================================`);
-  console.log(`Detective Conan Episode Browser Server Running`);
-  console.log(`URL: http://localhost:${PORT}`);
-  console.log(`Auto-Sync Schedule: Every 12 Hours`);
-  console.log(`================================================`);
+// Start server & scheduled sync check only when run directly (local dev)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`================================================`);
+    console.log(`Detective Conan Episode Browser Server Running`);
+    console.log(`URL: http://localhost:${PORT}`);
+    console.log(`Auto-Sync Schedule: Every 12 Hours`);
+    console.log(`================================================`);
 
-  // Initial sync check on startup
-  autoSyncCheck();
+    // Initial sync check on startup
+    autoSyncCheck();
 
-  // Recurring timer
-  setInterval(autoSyncCheck, SYNC_INTERVAL_MS);
-});
+    // Recurring timer
+    setInterval(autoSyncCheck, SYNC_INTERVAL_MS);
+  });
+}
+
+module.exports = app;
