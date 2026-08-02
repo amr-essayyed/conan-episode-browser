@@ -4567,7 +4567,7 @@
     "title": "Contact with the Black Organization (The Negotiation)",
     "url": "https://www.detectiveconanworld.com/wiki/Contact_with_the_Black_Organization",
     "originalBroadcast": "February 10, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "character_dev",
       "black_org"
@@ -4583,7 +4583,7 @@
     "title": "Contact with the Black Organization (The Pursuit)",
     "url": "https://www.detectiveconanworld.com/wiki/Contact_with_the_Black_Organization",
     "originalBroadcast": "February 17, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "black_org"
     ],
@@ -4598,7 +4598,7 @@
     "title": "Contact with the Black Organization (Desperation)",
     "url": "https://www.detectiveconanworld.com/wiki/Contact_with_the_Black_Organization",
     "originalBroadcast": "February 24, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "black_org"
     ],
@@ -4948,7 +4948,7 @@
     "title": "Secret of the Tohto Film Development Studio (Part 1)",
     "url": "https://www.detectiveconanworld.com/wiki/Secret_of_the_Tohto_Film_Development_Studio",
     "originalBroadcast": "September 8, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "romance",
       "detective_boys"
@@ -4964,7 +4964,7 @@
     "title": "Secret of the Tohto Film Development Studio (Part 2)",
     "url": "https://www.detectiveconanworld.com/wiki/Secret_of_the_Tohto_Film_Development_Studio",
     "originalBroadcast": "September 15, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "character_dev",
       "detective_boys"
@@ -5023,7 +5023,7 @@
     "title": "The Four Porsches (Part 1)",
     "url": "https://www.detectiveconanworld.com/wiki/The_Four_Porsches",
     "originalBroadcast": "October 20, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "black_org",
       "fbi"
@@ -5039,7 +5039,7 @@
     "title": "The Four Porsches (Part 2)",
     "url": "https://www.detectiveconanworld.com/wiki/The_Four_Porsches",
     "originalBroadcast": "October 27, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "character_dev",
       "black_org",
@@ -5056,7 +5056,7 @@
     "title": "Hidden Bathroom Secret (Part 1)",
     "url": "https://www.detectiveconanworld.com/wiki/Hidden_Bathroom_Secret",
     "originalBroadcast": "November 3, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "character_dev",
       "black_org"
@@ -5072,7 +5072,7 @@
     "title": "Hidden Bathroom Secret (Part 2)",
     "url": "https://www.detectiveconanworld.com/wiki/Hidden_Bathroom_Secret",
     "originalBroadcast": "November 10, 2003",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "character_dev",
       "black_org"
@@ -5154,7 +5154,7 @@
     "title": "Find the Buttock's Mark (Part 1)",
     "url": "https://www.detectiveconanworld.com/wiki/Find_the_Buttock%27s_Mark",
     "originalBroadcast": "January 12, 2004",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "romance",
       "detective_boys"
@@ -5170,7 +5170,7 @@
     "title": "Find the Buttock's Mark (Part 2)",
     "url": "https://www.detectiveconanworld.com/wiki/Find_the_Buttock%27s_Mark",
     "originalBroadcast": "January 19, 2004",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [
       "character_dev",
       "romance",
@@ -5572,7 +5572,7 @@
     "title": "A Course Without Protest (Part 1)",
     "url": "https://www.detectiveconanworld.com/wiki/A_Course_Without_Protest",
     "originalBroadcast": "August 23, 2004",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [],
     "mangaSource": "V45 - F6~8(463-465)",
     "hint": "Tennis ball",
@@ -5585,7 +5585,7 @@
     "title": "A Course Without Protest (Part 2)",
     "url": "https://www.detectiveconanworld.com/wiki/A_Course_Without_Protest",
     "originalBroadcast": "August 30, 2004",
-    "englishBroadcast": "",
+    "englishBroadcast": "August 1, 2026",
     "plotElements": [],
     "mangaSource": "V45 - F6~8(463-465)",
     "hint": "Chart",
@@ -20676,7 +20676,7 @@
   },
   {
     "season": 31,
-    "jpNumber": "450",
+    "jpNumber": "450R166",
     "intNumber": "489",
     "title": "Trick vs. Magic (Part 1) (Remastered)",
     "url": "https://www.detectiveconanworld.com/wiki/Trick_vs._Magic",
@@ -20685,11 +20685,11 @@
     "plotElements": [],
     "mangaSource": "TV Original",
     "hint": "Ring",
-    "type": "Anime Original"
+    "type": "Remaster"
   },
   {
     "season": 31,
-    "jpNumber": "451",
+    "jpNumber": "451R167",
     "intNumber": "490",
     "title": "Trick vs. Magic (Part 2) (Remastered)",
     "url": "https://www.detectiveconanworld.com/wiki/Trick_vs._Magic",
@@ -20698,7 +20698,7 @@
     "plotElements": [],
     "mangaSource": "TV Original",
     "hint": "Chain",
-    "type": "Anime Original"
+    "type": "Remaster"
   },
   {
     "season": 31,
@@ -20819,13 +20819,45 @@
     "jpNumber": "1209",
     "intNumber": "1269",
     "title": "Who's the Target?",
-    "url": "https://www.detectiveconanworld.com/wiki/index.php?title=Who%27s_the_Target%3F&action=edit&redlink=1",
+    "url": "https://www.detectiveconanworld.com/wiki/Who%27s_the_Target%3F",
     "originalBroadcast": "August 1, 2026",
     "englishBroadcast": "",
     "plotElements": [],
     "mangaSource": "TV Original",
     "hint": "Ticket",
     "type": "Anime Original"
+  },
+  {
+    "season": 31,
+    "jpNumber": "118R168",
+    "intNumber": "124",
+    "title": "The Naniwa Serial Murder Case (Part 1) (Remastered)",
+    "url": "https://www.detectiveconanworld.com/wiki/The_Naniwa_Serial_Murder_Case",
+    "originalBroadcast": "August 8, 2026",
+    "englishBroadcast": "",
+    "plotElements": [
+      "new_character",
+      "heiji"
+    ],
+    "mangaSource": "V19 - F5~8(185-188)",
+    "hint": "Wallet",
+    "type": "Remaster"
+  },
+  {
+    "season": 31,
+    "jpNumber": "118R169",
+    "intNumber": "125",
+    "title": "The Naniwa Serial Murder Case (Part 2) (Remastered)",
+    "url": "https://www.detectiveconanworld.com/wiki/The_Naniwa_Serial_Murder_Case",
+    "originalBroadcast": "August 15, 2026",
+    "englishBroadcast": "",
+    "plotElements": [
+      "new_character",
+      "heiji"
+    ],
+    "mangaSource": "V19 - F5~8(185-188)",
+    "hint": "",
+    "type": "Remaster"
   },
   {
     "season": 31,
