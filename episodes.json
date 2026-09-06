@@ -15442,7 +15442,7 @@
     "season": 24,
     "jpNumber": "933",
     "intNumber": "990",
-    "title": "Thoroughbred Kidnapping Case‎��� (Part 1)",
+    "title": "Thoroughbred Kidnapping Case‎‎ (Part 1)",
     "url": "https://www.detectiveconanworld.com/wiki/Thoroughbred_Kidnapping_Case",
     "originalBroadcast": "March 9, 2019",
     "englishBroadcast": "",
@@ -20883,7 +20883,9 @@
     "url": "https://www.detectiveconanworld.com/wiki/The_Birdman_Rally_Bombing",
     "originalBroadcast": "August 29, 2026",
     "englishBroadcast": "",
-    "plotElements": [],
+    "plotElements": [
+      "heiji"
+    ],
     "mangaSource": "TV Original",
     "hint": "Plane",
     "type": "Anime Original"
@@ -20896,16 +20898,46 @@
     "url": "https://www.detectiveconanworld.com/wiki/The_Birdman_Rally_Bombing",
     "originalBroadcast": "September 5, 2026",
     "englishBroadcast": "",
-    "plotElements": [],
+    "plotElements": [
+      "heiji"
+    ],
     "mangaSource": "TV Original",
     "hint": "Pylon",
     "type": "Anime Original"
   },
   {
     "season": 31,
+    "jpNumber": "423R170",
+    "intNumber": "457",
+    "title": "The Detective Boys and the Four Caterpillar Brothers (Remastered)",
+    "url": "https://www.detectiveconanworld.com/wiki/The_Detective_Boys_and_the_Four_Caterpillar_Brothers",
+    "originalBroadcast": "September 12, 2026",
+    "englishBroadcast": "",
+    "plotElements": [
+      "detective_boys"
+    ],
+    "mangaSource": "TV Original",
+    "hint": "Baseball cap",
+    "type": "Remaster"
+  },
+  {
+    "season": 31,
     "jpNumber": "-",
     "intNumber": "-",
-    "title": "Murder Case No. 30 (unconfirmed translationJapanese title is \"３０号殺人事件\")",
+    "title": "The Counterfeit Case of Ultra 30",
+    "url": "https://www.detectiveconanworld.com/wiki/The_Counterfeit_Case_of_Ultra_30",
+    "originalBroadcast": "September 25, 2026",
+    "englishBroadcast": "",
+    "plotElements": [],
+    "mangaSource": "TV Original",
+    "hint": "N/A",
+    "type": "Anime Original"
+  },
+  {
+    "season": 31,
+    "jpNumber": "-",
+    "intNumber": "-",
+    "title": "The Murder of Thirty-One Island (unconfirmed translationJapanese title is \"三十一島(みそひと)じまの殺人\")",
     "originalBroadcast": "TBA",
     "englishBroadcast": "",
     "plotElements": [],
