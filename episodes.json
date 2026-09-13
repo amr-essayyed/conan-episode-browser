@@ -20922,6 +20922,18 @@
   },
   {
     "season": 31,
+    "jpNumber": "1213",
+    "intNumber": "1273",
+    "title": "The Witness, Ran Mouri (unconfirmed translation{{{2}}})",
+    "originalBroadcast": "September 19, 2026",
+    "englishBroadcast": "",
+    "plotElements": [],
+    "mangaSource": "TV Original",
+    "hint": "Deck brush",
+    "type": "Anime Original"
+  },
+  {
+    "season": 31,
     "jpNumber": "-",
     "intNumber": "-",
     "title": "The Counterfeit Case of Ultra 30",
@@ -20932,6 +20944,42 @@
     "mangaSource": "TV Original",
     "hint": "N/A",
     "type": "Anime Original"
+  },
+  {
+    "season": 31,
+    "jpNumber": "1214",
+    "intNumber": "1274",
+    "title": "The Dark Red Last Act (Opening Day) (unconfirmed translation{{{2}}})",
+    "originalBroadcast": "September 26, 2026",
+    "englishBroadcast": "",
+    "plotElements": [],
+    "mangaSource": "V106 - F6~10(1129-1133)",
+    "hint": "",
+    "type": "Manga Canon"
+  },
+  {
+    "season": 31,
+    "jpNumber": "1215",
+    "intNumber": "1275",
+    "title": "The Dark Red Last Act (Second to Last Day) (unconfirmed translation{{{2}}})",
+    "originalBroadcast": "October 3, 2026",
+    "englishBroadcast": "",
+    "plotElements": [],
+    "mangaSource": "V106 - F6~10(1129-1133)",
+    "hint": "",
+    "type": "Manga Canon"
+  },
+  {
+    "season": 31,
+    "jpNumber": "1216",
+    "intNumber": "1276",
+    "title": "The Dark Red Last Act (Last Day) (unconfirmed translation{{{2}}})",
+    "originalBroadcast": "October 10, 2026",
+    "englishBroadcast": "",
+    "plotElements": [],
+    "mangaSource": "V106 - F6~10(1129-1133)",
+    "hint": "",
+    "type": "Manga Canon"
   },
   {
     "season": 31,
