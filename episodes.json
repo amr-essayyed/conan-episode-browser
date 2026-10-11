@@ -20952,7 +20952,9 @@
     "url": "https://www.detectiveconanworld.com/wiki/The_Crimson_Closing_Day",
     "originalBroadcast": "September 26, 2026",
     "englishBroadcast": "",
-    "plotElements": [],
+    "plotElements": [
+      "romance"
+    ],
     "mangaSource": "V106 - F6~10(1129-1133)",
     "hint": "Stage",
     "type": "Manga Canon"
@@ -20965,7 +20967,9 @@
     "url": "https://www.detectiveconanworld.com/wiki/The_Crimson_Closing_Day",
     "originalBroadcast": "October 3, 2026",
     "englishBroadcast": "",
-    "plotElements": [],
+    "plotElements": [
+      "new_character"
+    ],
     "mangaSource": "V106 - F6~10(1129-1133)",
     "hint": "Marionette",
     "type": "Manga Canon"
@@ -20978,10 +20982,26 @@
     "url": "https://www.detectiveconanworld.com/wiki/The_Crimson_Closing_Day",
     "originalBroadcast": "October 10, 2026",
     "englishBroadcast": "",
-    "plotElements": [],
+    "plotElements": [
+      "new_character",
+      "romance"
+    ],
     "mangaSource": "V106 - F6~10(1129-1133)",
     "hint": "Observation deck",
     "type": "Manga Canon"
+  },
+  {
+    "season": 31,
+    "jpNumber": "1217",
+    "intNumber": "1277",
+    "title": "The Hands Pushing Their Back",
+    "url": "https://www.detectiveconanworld.com/wiki/index.php?title=The_Hands_Pushing_Their_Back&action=edit&redlink=1",
+    "originalBroadcast": "October 17, 2026",
+    "englishBroadcast": "",
+    "plotElements": [],
+    "mangaSource": "TV Original",
+    "hint": "Ten-yen coin",
+    "type": "Anime Original"
   },
   {
     "season": 31,
