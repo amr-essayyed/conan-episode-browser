@@ -21021,12 +21021,27 @@
     "jpNumber": "1218",
     "intNumber": "1278",
     "title": "A Paw-sitively Wonderful Investigation",
-    "url": "https://www.detectiveconanworld.com/wiki/index.php?title=A_Paw-sitively_Wonderful_Investigation&action=edit&redlink=1",
+    "url": "https://www.detectiveconanworld.com/wiki/A_Paw-sitively_Wonderful_Investigation",
     "originalBroadcast": "October 31, 2026",
     "englishBroadcast": "",
     "plotElements": [],
     "mangaSource": "TV Original",
     "hint": "Pumps",
+    "type": "Anime Original"
+  },
+  {
+    "season": 31,
+    "jpNumber": "1219",
+    "intNumber": "1279",
+    "title": "The Café of Many Refusals",
+    "url": "https://www.detectiveconanworld.com/wiki/index.php?title=The_Caf%C3%A9_of_Many_Refusals&action=edit&redlink=1",
+    "originalBroadcast": "November 7, 2026",
+    "englishBroadcast": "",
+    "plotElements": [
+      "detective_boys"
+    ],
+    "mangaSource": "TV Original",
+    "hint": "Seat",
     "type": "Anime Original"
   },
   {
