@@ -21072,6 +21072,35 @@
   },
   {
     "season": 31,
+    "jpNumber": "829R172",
+    "intNumber": "884",
+    "title": "The Mysterious Boy (Remastered)",
+    "url": "https://www.detectiveconanworld.com/wiki/The_Mysterious_Boy",
+    "originalBroadcast": "November 28, 2026",
+    "englishBroadcast": "",
+    "plotElements": [
+      "past",
+      "detective_boys"
+    ],
+    "mangaSource": "TV Original",
+    "hint": "Strawberry ice cream",
+    "type": "Remaster"
+  },
+  {
+    "season": 31,
+    "jpNumber": "1222",
+    "intNumber": "1282",
+    "title": "Mystery of the Rare Book Library",
+    "url": "https://www.detectiveconanworld.com/wiki/index.php?title=Mystery_of_the_Rare_Book_Library&action=edit&redlink=1",
+    "originalBroadcast": "December 5, 2026",
+    "englishBroadcast": "",
+    "plotElements": [],
+    "mangaSource": "TV Original",
+    "hint": "Playing cards",
+    "type": "Anime Original"
+  },
+  {
+    "season": 31,
     "jpNumber": "-",
     "intNumber": "-",
     "title": "The Murder of Thirty-One Island (unconfirmed translationJapanese title is \"三十一島(みそひと)じまの殺人\")",
